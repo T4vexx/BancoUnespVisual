@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="443.0" style="-fx-background-color: #1A202C;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.SaqueController">
+    <children>
+        <Label fx:id="consulta_saldo" layoutX="4.0" layoutY="3.0" text="Valor para saque" textFill="WHITE">
+            <font>
+                <Font name="Roboto" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="valorSaque" layoutX="4.0" layoutY="40.0" promptText="1000.00" style="-fx-background-color: #171923; -fx-text-fill: white;">
+            <font>
+                <Font name="Roboto" size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="sacarButtom" layoutX="4.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" styleClass="button1" stylesheets="@login.css" text="Sacar" textFill="WHITE" />
+        <Label fx:id="setarSaque" layoutX="4.0" layoutY="147.0" textFill="WHITE">
+            <font>
+                <Font name="Roboto" size="18.0" />
+            </font>
+        </Label>
+      <Label fx:id="setarErroSaque" layoutX="4.0" layoutY="187.0" textFill="RED">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

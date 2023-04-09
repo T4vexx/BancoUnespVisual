@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.LoginController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: #1A202C;">
+         <children>
+            <Separator layoutX="263.0" layoutY="58.0" orientation="VERTICAL" prefHeight="285.0" prefWidth="0.0" />
+            <Label layoutX="25.0" layoutY="71.0" prefHeight="24.0" prefWidth="217.0" text="Bem vindo ao BancoUnesp" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="112.0" prefHeight="188.0" prefWidth="217.0" text="Nosso banco possui as melhores taxas do mercado, você pode fazer depositos saques transferencias pix e muito mais, criar uma conta gratuitamente agora!" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Roboto" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="328.0" text="Banco unesp" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="302.0" prefHeight="47.0" prefWidth="6.0" text="." textFill="#6b46c1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Pane layoutX="300.0" layoutY="68.0" prefHeight="265.0" prefWidth="274.0" style="-fx-background-color: #2D3748; -fx-background-radius: 6;">
+               <children>
+                  <AnchorPane layoutX="26.0" layoutY="14.0">
+                     <children>
+                        <Label text="Agencia" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="numeroDaAgencia" layoutY="22.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="26.0" layoutY="77.0">
+                     <children>
+                        <Label text="Conta" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="numeroDaConta" layoutY="22.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="26.0" layoutY="139.0">
+                     <children>
+                        <Label text="Senha" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="senha" layoutY="22.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="login" layoutX="26.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="button1" stylesheets="@login.css" text="Login">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="erroNoFomulario" layoutX="26.0" layoutY="195.0" textFill="RED" />
+               </children></Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

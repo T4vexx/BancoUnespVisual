@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.UserController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="609.0" style="-fx-background-color: #1A202C;">
+            <children>
+                <Separator layoutX="130.0" layoutY="148.0" orientation="VERTICAL" prefHeight="235.0" prefWidth="5.0" style="-fx-background-color: transparent;" />
+            <ImageView fitHeight="70.0" fitWidth="59.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image></ImageView>
+            <Label fx:id="label_nome" layoutX="118.0" layoutY="52.0" text="Otávio Augusto Teixeira" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_conta" layoutX="449.0" layoutY="53.0" text="19719" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_agencia" layoutX="555.0" layoutY="53.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="23.0" text="Nome:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="447.0" layoutY="23.0" text="Conta:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="533.0" layoutY="23.0" text="Agencia:" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="saldo" layoutX="14.0" layoutY="136.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Consultar Saldo" textFill="WHITE" />
+            <Button fx:id="deposito" layoutX="14.0" layoutY="169.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Deposito" textFill="WHITE" />
+            <Button fx:id="saque" layoutX="14.0" layoutY="203.0" mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Saque" textFill="WHITE" />
+            <Button fx:id="transferencia" layoutX="14.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Transferencia" textFill="WHITE" />
+            <Button fx:id="pix" layoutX="-12.0" layoutY="268.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="PIX" textFill="WHITE" />
+            <Button fx:id="mudarSenha" layoutX="14.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Mudar senha" textFill="WHITE" />
+            <Button fx:id="gerarExtrato" layoutX="14.0" layoutY="298.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Gerar extrato" textFill="WHITE" />
+            <Button fx:id="sair" layoutX="-10.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: transparent;" styleClass="buttonOpcao" text="Sair" textFill="WHITE" />
+            <BorderPane fx:id="bp" layoutX="143.0" layoutY="141.0" prefHeight="244.0" prefWidth="443.0" />
+            </children>
+        </Pane>
+    </children>
+</HBox>

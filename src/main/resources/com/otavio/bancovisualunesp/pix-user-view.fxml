@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="443.0" style="-fx-background-color: #1A202C;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.PixController">
+    <children>
+        <AnchorPane layoutX="4.0" layoutY="3.0">
+            <children>
+                <Label fx:id="consulta_saldo" text="CPF do destinatario" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="cpfPix" layoutY="37.0" prefHeight="28.0" prefWidth="190.0" promptText="0" style="-fx-background-color: #171923; -fx-text-fill: white;">
+                    <font>
+                        <Font name="Roboto" size="14.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="5.0" layoutY="83.0">
+            <children>
+                <Label fx:id="consulta_saldo11" text="Valor da transferencia" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="valorPix" layoutY="37.0" prefHeight="28.0" prefWidth="177.0" promptText="1000.00" style="-fx-background-color: #171923; -fx-text-fill: white;">
+                    <font>
+                        <Font name="Roboto" size="14.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <Button fx:id="pixButton" layoutX="5.0" layoutY="172.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" styleClass="button1" stylesheets="@login.css" text="Transferir" textFill="WHITE" />
+        <Label fx:id="pixMensagem" layoutX="5.0" layoutY="215.0" textFill="WHITE">
+            <font>
+                <Font name="Roboto" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

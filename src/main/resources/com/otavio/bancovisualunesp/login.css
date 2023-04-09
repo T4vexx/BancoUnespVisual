@@ -1,0 +1,25 @@
+.button1 {
+    -fx-background-color: #6b46c1;
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.button1:hover {
+    -fx-background-color: #805AD5;
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.buttonOpcao {
+    -fx-background-color: transparent;
+    -fx-cursor: pointer;
+    -fx-text-fill: white;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.buttonOpcao:hover {
+    -fx-background-color: transparent;
+    -fx-cursor: pointer;
+    -fx-text-fill: #6b46c1;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}

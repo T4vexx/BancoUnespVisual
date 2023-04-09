@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="443.0" style="-fx-background-color: #1A202C;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.MudarSenhaControll">
+    <children>
+        <AnchorPane layoutX="4.0" layoutY="3.0">
+            <children>
+                <Label text="Senha antiga" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="oldSenha" layoutY="37.0" prefHeight="28.0" prefWidth="177.0" promptText="191919" style="-fx-background-color: #171923; -fx-text-fill: white;">
+                    <font>
+                        <Font name="Roboto" size="14.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="5.0" layoutY="83.0">
+            <children>
+                <Label text="Nova senha" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="newSenha" layoutY="37.0" prefHeight="28.0" prefWidth="177.0" promptText="202020" style="-fx-background-color: #171923; -fx-text-fill: white;">
+                    <font>
+                        <Font name="Roboto" size="14.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <Button fx:id="changeSenhaButton" layoutX="5.0" layoutY="172.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" styleClass="button1" stylesheets="@login.css" text=" Mudar Senha" textFill="WHITE" />
+        <Label fx:id="senhaMensagem" layoutX="5.0" layoutY="215.0" textFill="WHITE">
+            <font>
+                <Font name="Roboto" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

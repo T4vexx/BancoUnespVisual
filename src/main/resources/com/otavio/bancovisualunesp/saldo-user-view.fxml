@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane  prefHeight="244.0" prefWidth="443.0" style="-fx-background-color: #1A202C;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otavio.bancovisualunesp.controllers.ConsultarSaldoController">
+   <children>
+      <Label text="O seu saldo é:" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="consulta_saldo" layoutY="61.0" text="R$ 10000 " textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
