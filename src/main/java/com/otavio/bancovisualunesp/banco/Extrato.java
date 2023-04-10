@@ -34,8 +34,8 @@ public class Extrato {
      * @param Agencia numero de uma agencia Int
      */
     public static void gerarExtrato(String nome, String endereco, String cpf, double saldo, int numero, String nomeBanco, int Agencia, ArrayList<Transacoes> transacoes) {
-        File diretorio = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos");
-        //File diretorio = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnespPOO\\src\\main\\java\\com\\otavio\\bancounesp\\extratos");
+        //File diretorio = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos");
+        File diretorio = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos");
         String message = String.format("%d_%d_extrato.txt",numero,extratosTirados);
         File arquivo = new File(diretorio, message);
         SimpleDateFormat formatter = new SimpleDateFormat("dd 'de' MMMM 'de' yyyy '|' HH:mm:ss");
