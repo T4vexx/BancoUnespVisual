@@ -32,9 +32,14 @@ public class DepositoController implements Initializable {
             public void handle(ActionEvent actionEvent) {
 
                 if(valorDeposito.getText() != "") {
-                    double meuSaldo = displayBanco.operacaoSwitch(2, actionEvent, valorDeposito.getText());
-                    setarSaldo.setText("Seu novo saldo é : "+meuSaldo);
-                    setarSaldo.setTextFill(Paint.valueOf("#ffffff"));
+                    if(Integer.parseInt(valorDeposito.getText()) > 0) {
+                        double meuSaldo = displayBanco.operacaoSwitch(2, actionEvent, valorDeposito.getText());
+                        setarSaldo.setText("Seu novo saldo é : "+meuSaldo);
+                        setarSaldo.setTextFill(Paint.valueOf("#ffffff"));
+                    } else {
+                        setarSaldo.setTextFill(Paint.valueOf("#ff0000"));
+                        setarSaldo.setText("Erro: Digite um valor maior que zero");
+                    }
                 } else {
                     setarSaldo.setTextFill(Paint.valueOf("#ff0000"));
                     setarSaldo.setText("Erro: Digite um valor");

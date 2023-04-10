@@ -31,12 +31,12 @@ public class DisplayBanco {
         Scanner contasFiles = null;
         String linha;
         String[] campos;
-        //File banco = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
-        //File agencia = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
-        //File conta = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
-        File banco = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
-        File agencia = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
-        File conta = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
+        File banco = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
+        File agencia = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
+        File conta = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
+        //File banco = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
+        //File agencia = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
+        //File conta = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
 
         try {
             bancoFiles = new Scanner(banco);

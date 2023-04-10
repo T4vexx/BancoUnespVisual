@@ -33,15 +33,20 @@ public class PixController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 if (cpfPix.getText() != "" && valorPix.getText() != "") {
-                    double result = displayBanco.operacaoSwitch(5, actionEvent, cpfPix.getText()+"#"+valorPix.getText());
-                    if(result == 0) {
-                        pixMensagem.setText(String.format("Transferência para o cpf %s feita com succeso | Valor %s", cpfPix.getText(), valorPix.getText()));
-                        pixMensagem.setTextFill(Paint.valueOf("#ffffff"));
-                    } else if(result == Double.parseDouble("1")) {
-                        pixMensagem.setText("Credencial de conta errada - Conta inexistente ou nao encontrada");
-                        pixMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                    if(Integer.parseInt(valorPix.getText()) > 0) {
+                        double result = displayBanco.operacaoSwitch(5, actionEvent, cpfPix.getText() + "#" + valorPix.getText());
+                        if (result == 0) {
+                            pixMensagem.setText(String.format("Transferência para o cpf %s feita com succeso | Valor %s", cpfPix.getText(), valorPix.getText()));
+                            pixMensagem.setTextFill(Paint.valueOf("#ffffff"));
+                        } else if (result == Double.parseDouble("1")) {
+                            pixMensagem.setText("Credencial de conta errada - Conta inexistente ou nao encontrada");
+                            pixMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                        } else {
+                            pixMensagem.setText("Valor de saque indisponivel - Voce nao possui saldo suficiente!");
+                            pixMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                        }
                     } else {
-                        pixMensagem.setText("Valor de saque indisponivel - Voce nao possui saldo suficiente!");
+                        pixMensagem.setText("Erro: Digite um valor maior que zero!");
                         pixMensagem.setTextFill(Paint.valueOf("#ff0000"));
                     }
                 } else {

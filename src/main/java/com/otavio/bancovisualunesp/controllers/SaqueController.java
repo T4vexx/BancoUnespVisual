@@ -33,13 +33,18 @@ public class SaqueController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 if(valorSaque.getText() != "") {
-                    double meuSaldo = displayBanco.operacaoSwitch(3, actionEvent, valorSaque.getText());
-                    if(meuSaldo == 0) {
-                        setarSaque.setText("Saque de R$"+valorSaque.getText()+" efeuado | seu saldo é: "+displayBanco.operacaoSwitch(1,actionEvent,""));
-                        setarErroSaque.setText("");
+                    if(Integer.parseInt(valorSaque.getText()) > 0) {
+                        double meuSaldo = displayBanco.operacaoSwitch(3, actionEvent, valorSaque.getText());
+                        if(meuSaldo == 0) {
+                            setarSaque.setText("Saque de R$"+valorSaque.getText()+" efeuado | seu saldo é: "+displayBanco.operacaoSwitch(1,actionEvent,""));
+                            setarErroSaque.setText("");
+                        } else {
+                            setarSaque.setText("");
+                            setarErroSaque.setText("Erro: Saldo insuficiente");
+                        }
                     } else {
                         setarSaque.setText("");
-                        setarErroSaque.setText("Erro: Saldo insuficiente");
+                        setarErroSaque.setText("Erro: Digite um valor maior que zero");
                     }
                 } else {
                     setarSaque.setText("");

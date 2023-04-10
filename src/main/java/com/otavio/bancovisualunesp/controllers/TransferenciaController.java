@@ -35,17 +35,22 @@ public class TransferenciaController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 if(agenciaTransferencia.getText() != "" && contaTransferencia.getText() != "" && valorTransferencia.getText() != "") {
-                    double result = displayBanco.operacaoSwitch(4, actionEvent, agenciaTransferencia.getText() + "#" + contaTransferencia.getText() + "#" + valorTransferencia.getText());
+                    if(Integer.parseInt(valorTransferencia.getText()) > 0) {
+                        double result = displayBanco.operacaoSwitch(4, actionEvent, agenciaTransferencia.getText() + "#" + contaTransferencia.getText() + "#" + valorTransferencia.getText());
 
-                    if (result == 0) {
-                        transferenciaMensagem.setText(String.format("Transferência para conta %s feita com succeso | Valor %s", contaTransferencia.getText(), valorTransferencia.getText()));
-                        transferenciaMensagem.setTextFill(Paint.valueOf("#ffffff"));
-                    } else if (result == Double.parseDouble("1")) {
-                        transferenciaMensagem.setText("Credenciais de conta erradas - Conta inexistente ou nao encontrada");
-                        transferenciaMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                        if (result == 0) {
+                            transferenciaMensagem.setText(String.format("Transferência para conta %s feita com succeso | Valor %s", contaTransferencia.getText(), valorTransferencia.getText()));
+                            transferenciaMensagem.setTextFill(Paint.valueOf("#ffffff"));
+                        } else if (result == Double.parseDouble("1")) {
+                            transferenciaMensagem.setText("Credenciais de conta erradas - Conta inexistente ou nao encontrada");
+                            transferenciaMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                        } else {
+                            transferenciaMensagem.setText("Valor de saque indisponivel - Voce nao possui saldo suficiente!");
+                            transferenciaMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                        }
                     } else {
-                        transferenciaMensagem.setText("Valor de saque indisponivel - Voce nao possui saldo suficiente!");
-                        transferenciaMensagem.setTextFill(Paint.valueOf("#ff0000"));
+                            transferenciaMensagem.setText("Erro: Digite um valor maior que zero");
+                            transferenciaMensagem.setTextFill(Paint.valueOf("#ff0000"));
                     }
                 } else {
                     transferenciaMensagem.setText("Erro: Falta de informações!");
