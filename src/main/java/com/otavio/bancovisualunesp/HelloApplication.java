@@ -23,8 +23,8 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 609, 400);
         stage.setTitle("Banco Unesp | Log-In page");
         stage.setResizable(false);
-        stage.getIcons().add(new Image("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\resources\\com\\otavio\\bancovisualunesp\\bank-building.png"));
-        //stage.getIcons().add(new Image("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\resources\\com\\otavio\\bancovisualunesp\\bank-building.png"));
+        //stage.getIcons().add(new Image("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\resources\\com\\otavio\\bancovisualunesp\\bank-building.png"));
+        stage.getIcons().add(new Image("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\resources\\com\\otavio\\bancovisualunesp\\bank-building.png"));
         stage.setScene(scene);
         stage.show();
     }

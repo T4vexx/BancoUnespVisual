@@ -1,6 +1,7 @@
 module com.otavio.bancovisualunesp {
     requires javafx.controls;
     requires javafx.fxml;
+    requires itextpdf;
 
 
     opens com.otavio.bancovisualunesp to javafx.fxml;

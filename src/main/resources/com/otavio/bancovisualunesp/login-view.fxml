@@ -51,22 +51,19 @@
                         <TextField fx:id="numeroDaConta" layoutY="22.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="26.0" layoutY="139.0">
-                     <children>
-                        <Label text="Senha" textFill="WHITE">
-                           <font>
-                              <Font name="Roboto" size="14.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="senha" layoutY="22.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
-                     </children>
-                  </AnchorPane>
+                  <AnchorPane layoutX="36.0" layoutY="170.0" />
                   <Button fx:id="login" layoutX="26.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" styleClass="button1" stylesheets="@login.css" text="Login">
                      <font>
                         <Font name="Roboto" size="14.0" />
                      </font>
                   </Button>
                   <Label fx:id="erroNoFomulario" layoutX="26.0" layoutY="195.0" textFill="RED" />
+                  <PasswordField fx:id="password" layoutX="26.0" layoutY="170.0" prefHeight="34.0" prefWidth="223.0" style="-fx-background-color: #171923; -fx-text-fill: white;" />
+                  <Label layoutX="26.0" layoutY="142.0" text="Senha" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </Label>
                </children></Pane>
          </children>
       </Pane>
