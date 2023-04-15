@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/tavexx/Documents/NetBeansProjects/bancovisualunesp/src/main/java/com/otavio/bancovisualunesp</OriginalElement>
+  <nodes>
+    <node x="-1619.924448845874" y="944.1425313568984">com.otavio.bancovisualunesp.banco.DisplayBanco</node>
+    <node x="-1.3177623990768552" y="858.1199538638987">com.otavio.bancovisualunesp.banco.Extrato</node>
+    <node x="-1284.25" y="-380.0125427594071">com.otavio.bancovisualunesp.banco.Conta</node>
+    <node x="-1878.6130334486736" y="1054.1425313568984">com.otavio.bancovisualunesp.HelloApplication</node>
+    <node x="-460.00285062713783" y="653.800456100342">com.otavio.bancovisualunesp.banco.Banco</node>
+    <node x="-442.00285062713783" y="242.95438996579242">com.otavio.bancovisualunesp.banco.Agencia</node>
+    <node x="-1198.0" y="-680.291904218928">com.otavio.bancovisualunesp.banco.Transacoes</node>
+    <node x="-1640.424448845874" y="1441.156982425407">com.otavio.bancovisualunesp.banco.DBUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.otavio.bancovisualunesp.banco.DisplayBanco" target="com.otavio.bancovisualunesp.banco.Banco" relationship="CREATE">
+      <point x="168.0" y="0.0" />
+      <point x="-177.5" y="112.34207525655643" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Conta" target="com.otavio.bancovisualunesp.banco.Transacoes" relationship="CREATE">
+      <point x="43.75" y="-239.0" />
+      <point x="15.0" y="95.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.DisplayBanco" target="com.otavio.bancovisualunesp.banco.Banco" relationship="TO_ONE">
+      <point x="168.0" y="15.0" />
+      <point x="-177.5" y="127.34207525655643" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Agencia" target="com.otavio.bancovisualunesp.banco.Conta" relationship="TO_MANY">
+      <point x="-1.493728621539958E-4" y="-140.0003899657924" />
+      <point x="-273.503" y="171.0" />
+      <point x="-1115.75" y="171.0" />
+      <point x="0.0" y="238.9995427594071" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Banco" target="com.otavio.bancovisualunesp.banco.Agencia" relationship="CREATE">
+      <point x="24.0" y="-338.0" />
+      <point x="15.0" y="140.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.DBUtils" target="com.otavio.bancovisualunesp.banco.DisplayBanco" relationship="TO_ONE">
+      <point x="15.0" y="-63.0" />
+      <point x="15.0" y="160.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Banco" target="com.otavio.bancovisualunesp.banco.Conta" relationship="TO_ONE">
+      <point x="-177.50014937286215" y="-4.5610034203491523E-4" />
+      <point x="-695.0" y="991.8" />
+      <point x="-695.0" y="171.0" />
+      <point x="-1115.75" y="171.0" />
+      <point x="0.0" y="238.9995427594071" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Conta" target="com.otavio.bancovisualunesp.banco.Transacoes" relationship="TO_MANY">
+      <point x="28.75" y="-239.0" />
+      <point x="0.0" y="95.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.DBUtils" target="com.otavio.bancovisualunesp.banco.DisplayBanco" relationship="CREATE">
+      <point x="0.0" y="-63.0" />
+      <point x="0.0" y="160.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Banco" target="com.otavio.bancovisualunesp.banco.Agencia" relationship="TO_MANY">
+      <point x="9.0" y="-338.0" />
+      <point x="0.0" y="140.0" />
+    </edge>
+    <edge source="com.otavio.bancovisualunesp.banco.Banco" target="com.otavio.bancovisualunesp.banco.Conta" relationship="CREATE">
+      <point x="-177.5" y="14.999543899657965" />
+      <point x="-1130.75" y="1006.8" />
+      <point x="-15.0" y="239.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3684657883552911" showDependencies="true" x="-992.0" y="496.06978085351807" />
+  <SelectedNodes>
+    <node>com.otavio.bancovisualunesp.HelloApplication</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

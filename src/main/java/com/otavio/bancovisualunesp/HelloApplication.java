@@ -11,6 +11,17 @@ import java.io.IOException;
 /**
  * <h1>Main</h1>
  * <p>Classe que cordena toda as funcionalidades do app
+ * Algumas considerações para que o programa rode, algumas partes no codigo tem que passar o diretorio correto na onde
+ * o senhor instalou o codigo, são eles:
+ * Na classe HelloApplication.java - a imagem esta nas resources bank-building.png
+ * Na classe DisplayBanco.java - os diretorios dos arquivos agencias banco contas txt
+ * Na classe Extrato.java - que é o caminho ate a pastas extratos onde ficaram os pdf (O senhor pode alterar o diretorio para um que fique mais facil)
+ *
+ * Dependencias:
+ * itextpdf - versao 5 - a 7 nao funciona - https://github.com/itext/itextpdf/releases/tag/5.5.13.3
+ * JavaFx
+ *
+ * Professor o UML esta na pasta com.otavio.bancovisualunesp - tem png e .uml também
  *
  * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
  * @version 1.0

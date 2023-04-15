@@ -176,7 +176,6 @@ public class DisplayBanco {
     }
 
     private void operacaoExtrato() {
-        System.out.println("test");
         Extrato.gerarExtrato(meuBanco.getNomeUsuario(), meuBanco.getEnderecoUsuario(), meuBanco.getUsuarioCpf(), meuBanco.getSaldoUsuario(), meuBanco.getNumeroUsuario(),meuBanco.getNome(),meuBanco.getAgenciaUsuario(),meuBanco.getTransacoesUsuario());
     }
 
