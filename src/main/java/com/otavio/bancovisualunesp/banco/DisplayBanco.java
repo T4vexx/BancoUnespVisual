@@ -12,9 +12,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * <h1>Display Banco</h1>
+ * Display Banco
  * <p>Classe que cordena toda a interface de usuario do banco, login e outras funcionalidades
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.0
  */
@@ -31,12 +31,12 @@ public class DisplayBanco {
         Scanner contasFiles = null;
         String linha;
         String[] campos;
-//        File banco = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
-//        File agencia = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
-//        File conta = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
-        File banco = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
-        File agencia = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
-        File conta = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
+        File banco = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
+        File agencia = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
+        File conta = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
+        //File banco = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\banco.txt");
+        //File agencia = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\agencias.txt");
+        //File conta = new File("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\contas.txt");
 
         try {
             bancoFiles = new Scanner(banco);

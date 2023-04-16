@@ -7,9 +7,9 @@ package com.otavio.bancovisualunesp.banco;
 import java.util.ArrayList;
 
 /**
- * <h1>Banco</h1>
+ * Banco
  * <p>Classe que cordena toda as funcionalidades dos bancos e agencia
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.0
  */

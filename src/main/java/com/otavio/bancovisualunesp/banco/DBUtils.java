@@ -12,9 +12,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * <h1>DBUtils</h1>
+ * DBUtils
  * Classe que possui funçoes utils para o uso no contexto de mudanças de telas
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.3
  * @since 1.3
  */

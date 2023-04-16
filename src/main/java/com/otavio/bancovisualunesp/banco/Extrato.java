@@ -17,9 +17,10 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 
 /**
- * <h1>Extrato</h1>
- * <p> Classe que cria um arquivo com as informações da conta do usuário (Extrato)
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * Extrato
+ * <p> Classe que cria um arquivo com as informações da conta do usuário (Extrato)<br>
+ * Caso o senhor queira gera um text troque o nome do primeira método para gerarExtrato que ao inves de gerar um pdf ele vai gerar um txt
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.1
  */
@@ -35,6 +36,7 @@ public class Extrato {
      * @param numero numero de uma conta Int
      * @param nomeBanco nome do banco de uma conta String
      * @param Agencia numero de uma agencia Int
+     * @param transacoes todas as transaçoes da conta ArrayList
      */
     public static void gerarExtrato2(String nome, String endereco, String cpf, double saldo, int numero, String nomeBanco, int Agencia, ArrayList<Transacoes> transacoes) {
         //File diretorio = new File("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos");
@@ -87,6 +89,7 @@ public class Extrato {
      * @param numero numero de uma conta Int
      * @param nomeBanco nome do banco de uma conta String
      * @param Agencia numero de uma agencia Int
+     * @param transacoes todas as transaçoes da conta ArrayList
      */
     public static void gerarExtrato(String nome, String endereco, String cpf, double saldo, int numero, String nomeBanco, int Agencia, ArrayList<Transacoes> transacoes) {
         Document document = new Document();
@@ -94,7 +97,8 @@ public class Extrato {
 
         try {
 
-            PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos\\"+String.format("%d_%d_extrato.pdf",numero,extratosTirados)));
+            PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\tavexx\\Documents\\NetBeansProjects\\bancovisualunesp\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos\\"+String.format("%d_%d_extrato.pdf",numero,extratosTirados)));
+            //PdfWriter.getInstance(document, new FileOutputStream("C:\\Users\\tavin\\OneDrive\\Desktop\\3semestre\\BancoUnesp-Visual-Java\\src\\main\\java\\com\\otavio\\bancovisualunesp\\extratos\\"+String.format("%d_%d_extrato.pdf",numero,extratosTirados)));
             document.open();
             document.setPageSize(PageSize.A4);
             document.add(new Paragraph("----------------------------------------------------------------------------------------------"));

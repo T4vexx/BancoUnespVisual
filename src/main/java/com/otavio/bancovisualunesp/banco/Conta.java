@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * <h1>Conta</h1>
+ * Conta
  * Classe que armazena todos os dados de uma conta
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.0
  */

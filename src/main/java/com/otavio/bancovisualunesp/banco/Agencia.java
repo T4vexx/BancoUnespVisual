@@ -7,10 +7,10 @@ package com.otavio.bancovisualunesp.banco;
 import java.util.ArrayList;
 
 /**
- * <h1>Agencia</h1>
+ * Agencia
  * <p>Classe que cordena toda as funcionalidades das agencias e suas contas
  *
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.0
  */

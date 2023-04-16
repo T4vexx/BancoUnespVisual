@@ -3,9 +3,9 @@ package com.otavio.bancovisualunesp.banco;
 import java.util.Date;
 
 /**
- * <h1>Transações</h1>
+ * Transações
  * Classe que armazena todos os dados de uma transação
- * @author Otavio Augusto Teixeira <otavio.a.teixeira@unesp.br>
+ * @author Otavio Augusto Teixeira otavio.a.teixeira@unesp.br
  * @version 1.2
  * @since 1.2
  */
